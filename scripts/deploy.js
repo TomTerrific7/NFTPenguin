@@ -1,10 +1,10 @@
 async function main() {
-  const Penguin = await hre.ethers.getContractFactory("Penguin");
-  const penguin = await Penguin.deploy();
+  const Wizard = await hre.ethers.getContractFactory("Wizard");
+  const wizard = await Wizard.deploy();
 
-  await penguin.deployed();
+  await wizard.deployed();
 
-  console.log("Penguin deployed to:", penguin.address);
+  console.log("Wizard deployed to:", wizard.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

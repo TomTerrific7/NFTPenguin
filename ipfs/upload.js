@@ -6,12 +6,12 @@ async function run() {
   const files = [{
     path: '/',
     content: JSON.stringify({
-      name: "ChainShot Penguin",
+      name: "The Purple Wizard",
       attributes: {
         slippery: 100
       },
-      image: "https://gateway.ipfs.io/ipfs/QmP6j55fWoep9ENvQzkBDDAfUFfb7EogbaPTpzRfNpA638",
-      description: "Because we love penguins!"
+      image: "https://gateway.ipfs.io/ipfs/QmZ9vsdGYwoKynQtRcyDF3ALx2kVxRH9QtxbLxkWEDeBiP",
+      description: "Master of all Wizards"
     })
   }];
 

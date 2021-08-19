@@ -19,16 +19,16 @@ const frens = [
     "0x58fB6832905e329dd2E8c25E5dD835c3758344E0",
 ];
 
-const addr = "0x4e7b15709aCf3B8Ce9b6406c75b2D89B39E93A2f";
+const addr = "0x1A8B4497c498b4f13f8878e1Af6723215690177B";
 
 async function main() {
-  const penguin = await hre.ethers.getContractAt("Penguin", addr);
+  const wizard = await hre.ethers.getContractAt("Wizard", addr);
 
   const signer = await ethers.provider.getSigner(0);
   const nonce = await signer.getTransactionCount();
   for(let i = 0; i < frens.length; i++) {
-    const tokenURI = "https://ipfs.io/ipfs/QmfS2MwVj5PcNyWpVwVRzF2kC2gGVsTyxYLxaV82GWQ22s";
-    await penguin.awardItem(frens[i], tokenURI, {
+    const tokenURI = "https://gateway.ipfs.io/ipfs/QmTpWfr8RttKTDFH5CtukiqikorfFAgCi2kLAEpbKCEVsF";
+    await wizard.awardItem(frens[i], tokenURI, {
       nonce: nonce + i,
     });
   }
